@@ -23,7 +23,7 @@ function shuffle(array) {
 
 function appendPeople(array) {
     while(array.length > 0) {
-        for(var i = 0; i < numOfTeams && ; i++) {
+        for(var i = 0; i < numOfTeams; i++) {
             if(array.length > 0) {
                 $("div[data-index=" + (i + 1) + "]").append("<li class='randomList list-group-item list-group-item-success'>" + array.shift() + "</li>");
                 $("div[data-index=" + (i + 1) + "] li").last().hide().delay(300 * i).fadeIn(3000);
